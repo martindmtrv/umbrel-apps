@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: shinobi_web_1
       APP_PORT: 8080
-  
+
   web:
     image: registry.gitlab.com/shinobi-systems/shinobi:dev
     restart: on-failure
@@ -21,5 +21,6 @@ services:
     expose:
       - "8080"
     environment:
+      - PORT=8080
       - PLUGIN_KEYS={}
       - SSL_ENABLED=false
