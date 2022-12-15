@@ -17,7 +17,6 @@ services:
       - 1935:1935 # RTMP
       - 8554:8554 # RTSP
       - 8888:8888 # HLS
-      - 5000:5000 # WEB-UI
 
     volumes:
       # Uncomment to mount your data directories inside
