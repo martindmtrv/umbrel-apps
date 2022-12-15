@@ -14,12 +14,12 @@ description: >-
   View all your cameras in one place with the Web-UI!
 releaseNotes: >-
   Home Assistant disable WEB_AUTH
-developer: Dan Janosik
+developer: mrlt8
 website: https://github.com/mrlt8/docker-wyze-bridge
 dependencies: []
 repo: https://github.com/mrlt8/docker-wyze-bridge
 support: https://github.com/mrlt8/docker-wyze-bridge/discussions
-port: 4444
+port: 5000
 gallery: []
 path: ""
 defaultUsername: ""
