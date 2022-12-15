@@ -29,3 +29,4 @@ services:
       - RECORD_ALL=True
       - RECORD_LENGTH=600
       - ENABLE_AUDIO=True
+      - DOMAIN=$DEVICE_DOMAIN_NAME:4444
