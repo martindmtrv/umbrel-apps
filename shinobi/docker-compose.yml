@@ -10,7 +10,8 @@ services:
     image: registry.gitlab.com/shinobi-systems/shinobi:dev
     restart: on-failure
     stop_grace_period: 1m
-    ports: []
+    ports: 
+      - 4445:8080
     volumes:
       - ${APP_DATA_DIR}/config:/config
       - ${APP_DATA_DIR}/customAutoLoad:/home/Shinobi/libs/customAutoLoad
