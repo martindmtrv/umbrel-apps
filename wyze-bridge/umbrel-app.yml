@@ -5,22 +5,22 @@ name: Wyze Bridge
 version: "1.10.1"
 tagline: RTMP/RTSP/HLS Bridge for Wyze Cam
 description: >-
-Docker container to expose a local RTMP, RTSP, and HLS or Low-Latency HLS stream for ALL your Wyze cameras including the outdoor, doorbell, and 2K cams. No third-party or special firmware required.
+  Docker container to expose a local RTMP, RTSP, and HLS or Low-Latency HLS stream for ALL your Wyze cameras including the outdoor, doorbell, and 2K cams. No third-party or special firmware required.
 
-It just works!
+  It just works!
 
-Cameras stream locally without additional bandwidth.
+  Cameras stream locally without additional bandwidth.
 
-View all your cameras in one place with the Web-UI!
+  View all your cameras in one place with the Web-UI!
 releaseNotes: >-
-Home Assistant disable WEB_AUTH
+  Home Assistant disable WEB_AUTH
 developer: Dan Janosik
-website: https://explorer.btc21.org
-dependencies:
+website: https://github.com/mrlt8/docker-wyze-bridge
+dependencies: []
 repo: https://github.com/mrlt8/docker-wyze-bridge
 support: https://github.com/mrlt8/docker-wyze-bridge/discussions
 port: 5000
-gallery:
+gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
