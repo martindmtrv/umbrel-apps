@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: wyze-bridge_web_1
+      APP_PORT: 5000 
+ 
+  web:
+    image: mrlt8/wyze-bridge:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      # Replace <port> with the port that your app's web server
+      # is listening inside the Docker container. If you need to
+      # expose more ports, add them below.
+      - 1935:1935 # RTMP
+      - 8554:8554 # RTSP
+      - 8888:8888 # HLS
+      - 5000:5000 # WEB-UI
+
+    volumes:
+      # Uncomment to mount your data directories inside
+      # the Docker container for storing persistent data
+       - ${APP_DATA_DIR}/recordings:/record/
+    environment:
+      #- WYZE_EMAIL=<email>
+      #- WYZE_PASSWORD=<pw>
+      #- TZ=<tz>
+      #- RECORD_ALL=True
+      #- RECORD_LENGTH=600
+      #- ENABLE_AUDIO=True
