@@ -12,7 +12,6 @@ services:
     stop_grace_period: 1m
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${APP_DATA_DIR}/config:/config
       - ${APP_DATA_DIR}/customAutoLoad:/home/Shinobi/libs/customAutoLoad
       - ${APP_DATA_DIR}/database:/var/lib/mysql
       - ${APP_DATA_DIR}/recordings:/home/Shinobi/videos
