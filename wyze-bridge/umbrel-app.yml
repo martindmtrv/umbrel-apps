@@ -19,7 +19,7 @@ website: https://github.com/mrlt8/docker-wyze-bridge
 dependencies: []
 repo: https://github.com/mrlt8/docker-wyze-bridge
 support: https://github.com/mrlt8/docker-wyze-bridge/discussions
-port: 5000
+port: 4444
 gallery: []
 path: ""
 defaultUsername: ""
