@@ -26,7 +26,7 @@ services:
     environment:
       #- WYZE_EMAIL=<email>
       #- WYZE_PASSWORD=<pw>
-      #- TZ=<tz>
-      #- RECORD_ALL=True
-      #- RECORD_LENGTH=600
-      #- ENABLE_AUDIO=True
+      - TZ=America/Toronto
+      - RECORD_ALL=True
+      - RECORD_LENGTH=600
+      - ENABLE_AUDIO=True
