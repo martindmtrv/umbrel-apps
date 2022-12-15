@@ -5,7 +5,6 @@ services:
     environment:
       APP_HOST: shinobi_web_1
       APP_PORT: 8080
-
   web:
     image: registry.gitlab.com/shinobi-systems/shinobi:dev
     restart: on-failure
@@ -18,7 +17,7 @@ services:
       - ${APP_DATA_DIR}/database:/var/lib/mysql
       - ${APP_DATA_DIR}/recordings:/home/Shinobi/videos
       - ${APP_DATA_DIR}/plugins:/home/Shinobi/plugins
-      - ${APP_DATA_DIR}/streams:/dev/shm/streams
+      # - ${APP_DATA_DIR}/streams:/dev/shm/streams
     expose:
       - "8080"
     environment:

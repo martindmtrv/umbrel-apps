@@ -3,7 +3,7 @@ id: shinobi
 category: Automation
 name: Shinobi NVR
 version: "1.0"
-  tagline: Shinobi is a Network Video Recorder 
+tagline: Shinobi is a Network Video Recorder 
 description: >-
   The founder of Shinobi Systems, Moe Alam, wanted to make a cloud video recording solution. One that anyone could easily use. Simply login to your account, add camera details, set options, and away you go. 
   
