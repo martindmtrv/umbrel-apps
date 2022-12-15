@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: shinobi
+category: Automation
+name: Shinobi NVR
+version: "1.0"
+  tagline: Shinobi is a Network Video Recorder 
+description: >-
+  The founder of Shinobi Systems, Moe Alam, wanted to make a cloud video recording solution. One that anyone could easily use. Simply login to your account, add camera details, set options, and away you go. 
+  
+  Viewing streams and recordings on your mobile device by simply opening a web page. No installations. This means you could view it on any device with a capable browser.
+releaseNotes: >-
+  Initial Version
+developer: Shinobi Systems
+website: https://www.shinobi.video
+dependencies: []
+repo: https://gitlab.com/Shinobi-Systems/Shinobi/tree/dev/Docker
+support: https://www.reddit.com/r/ShinobiCCTV
+port: 5001
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<web-container-name>_1
+      # e.g. 'btc-rpc-explorer_web_1'
+      # Note that the '_1' at the end is needed
+      APP_HOST: shiobi_web_1
+      APP_PORT: 8080
+  
+  web:
+    image: registry.gitlab.com/shinobi-systems/shinobi:dev
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      # Replace <port> with the port that your app's web server
+      # is listening inside the Docker container. If you need to
+      # expose more ports, add them below.
+      - <port>:<port>
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+      - ${APP_DATA_DIR}/config:/config
+      - ${APP_DATA_DIR}/customAutoLoad:/home/Shinobi/libs/customAutoLoad
+      - ${APP_DATA_DIR}/database:/var/lib/mysql
+      - ${APP_DATA_DIR}/recordings:/home/Shinobi/videos
+      - ${APP_DATA_DIR}/plugins:/home/Shinobi/plugins
+      - ${APP_DATA_DIR}/streams:/dev/shm/streams
+
+    environment:
+      - PLUGIN_KEYS={}
+      - SSL_ENABLED=false
